@@ -2015,7 +2015,7 @@ footer .share a:hover {
 .cont__inner {
   display: flex;
   flex-wrap: wrap; 
-  margin-top: 20rem;
+  margin-top: 15rem;
   height: 50%;/* Allow elements to wrap to the next line on smaller screens */
 }
 
@@ -2067,8 +2067,8 @@ ul {
   justify-content: center;
   margin-top: 40px; /* Add spacing between the section content and the ul */
   flex-direction: row;
-  top: 90%;
-  right: 0px;
+  top: 85%;
+    left: 2px
 }
 
 ul li {
