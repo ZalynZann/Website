@@ -1993,3 +1993,103 @@ footer .share a:hover {
   left: auto;
   right: 5px;
 }/*# sourceMappingURL=style.css.map */
+
+/*--------------------------------------------------------------Update----------------------------------------------------------------------*/
+  /* Add a media query to adjust the styles for smaller screens */
+@media (max-width: 768px) {
+  .cont {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  
+}
+
+.nav > .nav-header > .nav-title > img {
+  width: 15rem;
+  height: fit-content;
+}
+
+.heading{
+  font-size: 4rem;
+}
+
+
+.cont__inner {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 20rem;
+  height: 50%;/* Allow elements to wrap to the next line on smaller screens */
+}
+
+.el {
+  flex: 0 0 calc(20% - #{$elMrg * 4}); /* Adjust the width of each element based on the number of elements */
+  margin: 0 $elMrg; /* Add margin between elements */
+}
+
+.el__content {
+  max-height: 0; /* Hide the content by default */
+  overflow: hidden;
+  transition: max-height $moveAT ease-out;
+}
+
+.el__bg{
+  width: calc(186vw - 373px);
+}
+
+.el__text {
+  margin-bottom: 20px; /* Add spacing between the text and close button */
+}
+
+.el__heading{
+  font-size: 12px;
+}
+
+.el__index-front {
+  transform: scale(1); /* Ensure the index overlay is visible by default */
+  transition: transform $indexHoverAT;
+}
+
+/* Adjust styles for hover and active states */
+.el:hover .el__index-front {
+  transform: scale(1.6); /* Increase the scale on hover */
+}
+
+.home {
+padding: 0;
+background-size: 177% 100%;
+}
+.el.s--active .el__index-front {
+  transform: scale(0); /* Hide the index overlay when the element is active */
+}
+
+/* Add styles for the ul element */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Add spacing between the section content and the ul */
+  flex-direction: row;
+  top: 90%;
+  right: 0px;
+}
+
+ul li {
+  margin: 0 10px; /* Add margin between the social icons */
+}
+
+ul li a {
+  display: block;
+  width: 54px;
+  height: 58px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ccc;
+  color: #fff;
+}
+
+img{
+  height: 46rem;
+}
+
+.info a{
+  border-radius: 0rem;
+}
+}
