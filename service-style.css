@@ -479,4 +479,24 @@
   .credits a {
     color: var(--color);
   }
+/*------------------------------------------------------Update-----------------------------------------------------------------*/
+
+@media (max-width: 968px){
+    .heading{
+        font-size: 3.5rem;
+    }
+    
+    ul li {
+        height: 31rem;
+    }
+    ul li .descr{
+        height: 20rem;
+        font-size: 13px;
+    }
+    .nav > .nav-links > a {
+        height: 11rem;
+        font-size: 20px;
+    }
+        
+}
   
