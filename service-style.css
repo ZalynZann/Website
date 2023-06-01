@@ -479,19 +479,25 @@
   .credits a {
     color: var(--color);
   }
-/*------------------------------------------------------Update-----------------------------------------------------------------*/
-
-@media (max-width: 968px){
+  @media (max-width: 968px){
     .heading{
         font-size: 3.5rem;
     }
+
+    section{
+      margin-top: 13rem;
+    }
     
     ul li {
-        height: 31rem;
+        height: 40rem;
     }
     ul li .descr{
-        height: 20rem;
+        height: 30rem;
         font-size: 13px;
+    }
+
+    .heading {
+      padding-bottom: 8rem;
     }
     .nav > .nav-links > a {
         height: 11rem;
@@ -499,4 +505,3 @@
     }
         
 }
-  
