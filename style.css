@@ -2019,7 +2019,7 @@ footer .share a:hover {
     margin: 0 1%; /* Add margin between elements */
   }
   .el__content {
-    max-height: 0; /* Hide the content by default */
+    max-height: 35rem; /* Hide the content by default */
     overflow: hidden;
     transition: max-height 0.6s ease-out;
   }
@@ -2027,10 +2027,16 @@ footer .share a:hover {
     width: calc(189vw - 371px);
   }
   .el__text {
-    margin-bottom: 20px; /* Add spacing between the text and close button */
+   font-size: 16px;
+    text-align: center;/* Add spacing between the text and close button */
   }
   .el__heading {
     font-size: 12px;
+    padding-top: 20px;
+  }
+  .el__close-btn {
+    width: 40px;
+    height: 40px;
   }
   .el__index-front {
     transform: scale(1); /* Ensure the index overlay is visible by default */
