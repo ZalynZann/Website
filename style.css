@@ -2026,11 +2026,12 @@ footer .share a:hover {
     transition: max-height 0.6s ease-out;
   }
   .el__bg {
-    width: calc(189vw - 371px);
+        width: calc(189vw - 352px);
   }
   .el__text {
    font-size: 14px;
     text-align: center;/* Add spacing between the text and close button */
+    padding-right: 0;
   }
   .el__heading {
     font-size: 12px;
