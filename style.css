@@ -218,7 +218,7 @@ header {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 5rem 9% 2rem;
 }
 
 .home {
@@ -1762,6 +1762,8 @@ footer .share a:hover {
 .el__text {
   font-size: 20px;
   color: #fff;
+  text-align: center;
+    padding-right: 38px;
 }
 .el__close-btn {
   z-index: -1;
