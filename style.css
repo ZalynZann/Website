@@ -2027,7 +2027,7 @@ footer .share a:hover {
     width: calc(189vw - 371px);
   }
   .el__text {
-   font-size: 16px;
+   font-size: 14px;
     text-align: center;/* Add spacing between the text and close button */
   }
   .el__heading {
@@ -2087,3 +2087,112 @@ footer .share a:hover {
     border-radius: 0rem;
   }
 }
+
+@media (min-width: 800px) and (max-width: 1090px) {
+ .cont {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+  .nav > .nav-header > .nav-title > img {
+    width: 15rem;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .cont__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24rem;
+    height: 66%; /* Allow elements to wrap to the next line on smaller screens */
+  }
+  .el {
+    flex: 0 0 calc(20% - 4%); /* Adjust the width of each element based on the number of elements */
+    margin: 0 1%; /* Add margin between elements */
+  }
+  .el__content {
+    max-height: 35rem; /* Hide the content by default */
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+  }
+  .el__bg {
+    width: calc(112vw - 272px);
+  }
+  .el__text {
+   font-size: 14px;
+    text-align: center;/* Add spacing between the text and close button */
+  }
+  .el__heading {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .el__close-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .el__index-front {
+    transform: scale(1); /* Ensure the index overlay is visible by default */
+    transition: transform 0.5s;
+  }
+  /* Adjust styles for hover and active states */
+  .el:hover .el__index-front {
+    transform: scale(1.6); /* Increase the scale on hover */
+  }
+  .home {
+    padding: 0;
+    background-size: 177% 100%;
+  }
+  .el.s--active .el__index-front {
+    transform: scale(0); /* Hide the index overlay when the element is active */
+  }
+  /* Add styles for the ul element */
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add spacing between the section content and the ul */
+    flex-direction: row;
+    top: 58%;
+    left: 2px;
+  }
+  ul li {
+    margin: 0 10px; /* Add margin between the social icons */
+  }
+  ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ccc;
+    color: #fff;
+  }
+  ul li a .fab {
+    line-height: 31px;
+    background: linear-gradient(0deg, #fff, #aaa8a8);
+    font-size: 21px;
+  }
+  img {
+    height: 46rem;
+  }
+  .info a {
+    border-radius: 0rem;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
