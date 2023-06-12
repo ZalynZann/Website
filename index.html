@@ -28,7 +28,7 @@
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
-        <img class="img-responsive" src="images/FirstKey-Logo.png" alt="#home">
+        <img class="responsive" src="images/FirstKey-Logo.png" alt="#home">
       </div>
     </div>
     <div class="nav-btn">
@@ -49,6 +49,9 @@
   
 <!-- header section ends -->
 
+
+
+<!--------------------------------Home Section------------------------->
 <section class="home" id="home">
   <div class="cont s--inactive">
     <!-- cont inner start -->
@@ -174,6 +177,20 @@
     <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
     <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
   </ul>
+<!-----------------------------------ChatBot---------------------------------------------->
+
+  <button class="btn" id="chat-toggle-btn" onclick="toggleChat()"><i class="fa-solid fa-headset"></i></button>
+  <div id="chat-container">
+    <div id="chat-header">
+      <span id="chat-title">Customer Support</span>
+      <button id="chat-close-btn" onclick="toggleChat()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="chat-display"></div>
+    <div id="user-input">
+      <input type="text" id="user-message" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
 </section>
 
 <!----------------------------------------------------------------Service Section----------------------------------------------------->
