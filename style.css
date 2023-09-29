@@ -2169,8 +2169,10 @@ footer .share a:hover {
     width: calc(189vw - 371px);
   }
   .responsive {
-    width: 32rem;
+    width: 29rem;
     height: auto;
+    position: relative;
+    left: -66px;
   }
   .el__text {
     margin-bottom: 20px; /* Add spacing between the text and close button */
