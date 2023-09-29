@@ -93,10 +93,15 @@ header {
 .nav {
   height: 50px;
   width: 100%;
+  margin-top: 26px;
   position: fixed;
   z-index: 1000;
   padding: 10px;
   padding-right: 5rem;
+  display: flex;
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
 }
 
 .nav > .nav-header {
@@ -108,8 +113,13 @@ header {
   padding: 10px 10px 10px 10px;
 }
 
+.nav-header,
+  .nav-links {
+    display: inline-block; /* Align the containers on the same line */
+  }
+
 .responsive {
-  width: 15rem;
+  width: 32rem;
   height: auto;
 }
 
@@ -121,6 +131,7 @@ header {
   display: inline;
   float: right;
   font-size: 18px;
+  margin-right: 34px;
 }
 
 .nav > .nav-links > a {
